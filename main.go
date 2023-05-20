@@ -18,7 +18,7 @@ func main() {
 
 	//conn, err := net.Dial("tcp", host+":"+port)
 	// 连接超时控制
-	conn, err := net.DialTimeout("tcp", host+":"+port, time.Duration(timeout)*time.Second)
+	conn, err := net.DialTimeout("tcp", host+":"+port, time.Duration(1)*time.Second)
 	if err != nil {
 		log.Fatal(err)
 	}
